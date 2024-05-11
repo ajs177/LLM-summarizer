@@ -6,7 +6,7 @@ from langchain.chains.summarize import load_summarize_chain
 
 def generate_response(txt):
     # Instantiate the LLM model
-    llm = OpenAI(temperature=0, openai_api_key=sk-proj-ZlYMeErzcSw0j3GkRvEPT3BlbkFJJYI7Rj229GfQDmIqbbXf)
+    llm = OpenAI(temperature=0, openai_api_key='sk-proj-ZlYMeErzcSw0j3GkRvEPT3BlbkFJJYI7Rj229GfQDmIqbbXf')
     # Split text
     text_splitter = CharacterTextSplitter()
     texts = text_splitter.split_text(txt)
